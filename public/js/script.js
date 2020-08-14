@@ -23,7 +23,8 @@ var place = weatherForm.addEventListener('submit', (e) => {
             }
             else{
                 messageTwo.innerHTML = data.location+" "+ "<br>"+"Temperature: "+data.forecast.temperature+
-                "<br>"+"Description: "+data.forecast.description+"<br>"+"Feels Like: "+data.forecast.feelLike
+                "<br>"+"Description: "+data.forecast.description+"<br>"+"Feels Like: "+data.forecast.feelLike+"<br>"+
+                "Humidity: "+data.forecast.humidity
                 // console.log(data.forecast)
             }
         })
