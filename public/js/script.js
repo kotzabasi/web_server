@@ -20,6 +20,7 @@ var place = weatherForm.addEventListener('submit', (e) => {
         response.json().then((data)=>{
             if(data.error){
                 messageOne.textContent=data.error
+                messageTwo.textContent = ''
             }
             else{
                 messageTwo.innerHTML = data.location+" "+ "<br>"+"Temperature: "+data.forecast.temperature+

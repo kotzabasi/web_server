@@ -27,23 +27,4 @@ const geocode = (address, callback) => {
 }
 module.exports=geocode
 
-// const geoUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Greece,Athens.json?access_token=pk.eyJ1IjoibC1rb3R6YWJhc2kiLCJhIjoiY2tjd20za2ZvMGY5ejMycHFqaHA4ZDFxbCJ9.kr1yxdlEuJDoBH06O3HqqA'
-
-// request({url:geoUrl, json:true},(error,response)=>{
-     
-//     if(error){
-//         console.log('Unable to connect to location services')
-//     }else if(response.body.message){
-//         console.log('Unable to find the location. Please try again')
-//     }
-//     else{
-//         const latitude = response.body.features[0].center[1]
-//         const longitude = response.body.features[0].center[0]
-//         const place = response.body.features[0].place_name
-    
-//         console.log(`${place} has latitude: ${latitude} and longitude: ${longitude}`)
-//     }
- 
-
-// })
 

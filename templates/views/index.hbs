@@ -9,19 +9,23 @@
         
        </head>
     <body>
+        <div class="main">
         <div class="main-content">
         {{>header}}
-        <p>Use this site to get the weather</p>
+        <p>Use Latin characters. Type the country and then the city seperated by a decimal point</p>
+        <p>Example: Greece,Athens</p>
         <form>
             <input placeholder="location">
             <button>Search</button>
         </form>
         </div>
-
+         <div id="msg">
         <p id="message-1"></p>
         <p id="message-2"></p>
+        </div>
       
        {{>footer}}
+       </div>
 
     <script src="/js/script.js"></script>
     </body>

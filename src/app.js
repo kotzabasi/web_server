@@ -27,8 +27,8 @@ hbs.registerPartials(partialsPath)
 app.get('', (req, res) => {
     //name of view (index) and an object to access
     res.render('index', {
-        title: 'Weather App',
-        name: 'Liana Kotzabasi'
+        title: "Today's weather forecast",
+        name: 'Liana'
     })
 })
 
@@ -44,7 +44,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         message: 'If you want help, please contact us ',
         title: "HELP",
-        name: 'LIANA'
+        name: 'Liana'
     })
 })
 
