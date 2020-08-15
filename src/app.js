@@ -42,7 +42,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        message: 'If you want help, please contact us ',
+        message: 'If you want help, please contact us at the following email addresss: l.kotzabasi@gmail.com',
         title: "HELP",
         name: 'Liana'
     })

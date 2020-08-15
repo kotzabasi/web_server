@@ -3,6 +3,7 @@ body{
     padding: 2rem;
     color: #333333;
     font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 400;
 }
 .main{
     box-sizing: border-box;
@@ -20,13 +21,13 @@ body{
     flex-direction: column;
 
 }
-#msg{
+.msg{
     flex-grow: 1;
 }
 
 footer{
-   color:#E5E4E2;
-   border-top: 2px solid #6d5955;
+   color:#566D7E;
+   border-top: 2px solid #566D7E;
    margin-top: 16px;
    padding: 16px 0;
    position: relative;
@@ -42,7 +43,10 @@ header{
 h1{
     font-size: 2rem;
     margin-bottom: 16px;
-    color: #BCC6CC;
+   background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 header a{
     color: #E5E4E2;
@@ -50,26 +54,48 @@ header a{
     text-decoration: none;
 }
 .portrait{
-    width: 200px;
+    width: 8rem;
+    position: relative;
+    right: -23rem;
 
 }
-.error{
+#error{
     color:darkred;
+    text-align: center;
+    font-weight: 900;
 }
 input{
-    border: 1px solid #cccccc;
+    border: 2px solid #888990;
     padding: 8px
     
 }
 
 button{
     cursor: pointer;
-    border: 1px solid #888888;
-    background: #888888;
+    border: 2px solid #888990;
+    background: -webkit-linear-gradient(#eee, #333);
     color: white;
     padding: 8px;
 }
 #message-1{
     font-weight: 900;
     color: red;
+}
+#about{
+    background-image: url("../img/sun.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left top;
+    position: relative;
+
+}
+#help{
+    background-image: url("../img/moon.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: left top;
+    position: relative;
+}
+#helpmsg{
+    color: #E5E4E2;
 }
