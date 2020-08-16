@@ -55,11 +55,6 @@ body{
        padding: 5px;
         background-position: center;} }
 
-
-.msg{
-    flex-grow: 1;
-}
-
 footer{
    color:#566D7E;
    border-top: 2px solid #566D7E;
@@ -98,8 +93,22 @@ header a{
     width: 8rem;
     position: relative;
     right: -23rem;
-
 }
+@media (max-width: 75em) {
+    .portrait {
+    width: 6rem;
+   position: relative;
+    right: 0;} }
+  @media (max-width: 56.25em) {
+    .portrait {
+    width: 4rem;
+    position: relative;
+    right: 0;} }
+  @media (min-width: 112.5em) {
+    .portrait {
+        width: 4rem;
+        position: relative;
+        right: 0;} }
 #error{
     color:darkred;
     text-align: center;
@@ -121,11 +130,14 @@ button{
     color: red;
 }
 #about{
+    
     background-image: url("../img/sun.jpg");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: left top;
-    position: relative;
+
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -138,4 +150,7 @@ button{
 }
 #helpmsg{
     color: #E5E4E2;
+}
+.msg{
+    flex-grow: 1;
 }
