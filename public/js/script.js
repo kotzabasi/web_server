@@ -33,9 +33,9 @@ var place = weatherForm.addEventListener('submit', (e) => {
             }
             else if (description.includes('sunny')) {
                 document.querySelector('.main').style.backgroundImage = 'url(../img/sunny.jpg)'
-                document.getElementById('link1').style.color = '#728C00'
-                document.getElementById('link2').style.color = '#728C00'
-                document.getElementById('link3').style.color = '#728C00'
+                document.getElementById('link1').style.color = '#2C3539'
+                document.getElementById('link2').style.color = '#2C3539'
+                document.getElementById('link3').style.color = '#2C3539'
             }
             else if (description.includes('cloudy') || description.includes('overcast')) {
                 document.querySelector('.main').style.backgroundImage = 'url(../img/cloudy.jpg)'
