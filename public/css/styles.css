@@ -1,7 +1,7 @@
 body{
     box-sizing: border-box;
     padding: 2rem;
-    color: #333333;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif; 
     font-weight: 400;
 }
@@ -88,6 +88,7 @@ header a{
     color: #E5E4E2;
     margin-right: 16px;
     text-decoration: none;
+    
 }
 .portrait{
     width: 8rem;
@@ -138,9 +139,7 @@ button{
 
     display: flex;
     flex-direction: column;
-
 }
-
 #help{
     background-image: url("../img/moon.jpg");
     background-repeat: no-repeat;
