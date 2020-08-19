@@ -16,10 +16,11 @@
         <p>Use Latin characters. Type the country and then the city seperated by a decimal point</p>
         <p>Example: Greece,Athens</p>
         <form>
-            <input id ="search" placeholder="location">
-            <button>Search</button>
+            <input list = "countryList" id ="search" placeholder="location">
+            <datalist id="countryList">
+      </datalist>
+      <button>Search</button>
         </form>
-        <div id="countryList"></div>
         </div>
          <div class="msg">
         <p id="message-1"></p>
@@ -29,6 +30,9 @@
        {{>footer}}
        </div>
 
+     <script type="text/javascript">
+          createEditableSelect(document.forms[0].myText);
+         </script>
     <script src="/js/script.js"></script>
     </body>
 </html>

@@ -5,52 +5,39 @@ const search = document.querySelector('input')
 
 messageOne = document.querySelector('#message-1')
 messageTwo = document.querySelector('#message-2')
-
 const searchcountry = async searchBox => {
-    const res = await fetch('/countries.json');
-    const countries = await res.json();
-  
-    //Get Entered Data
-    let fits = countries.filter(country => {
-      const regex = new RegExp(`^${searchBox}`, 'gi');
-      return country.name.match(regex) || country.abbr.match(regex);
-    });
-  
-    if (searchBox.length === 0) {
-      fits = [];
-      countryList.innerHTML = '';
-    }
-  
-    outputHtml(fits);
-  };
-  
-  // show results in HTML
-   const outputHtml = fits => {
-      if (fits.length > 0) {
-        const html = fits
-          .map(
-            fit => `
-         <div class="row">
-         <div class="col s12">
-           <div class="card  grey darken-4 darken-1">
-             <div class="card-content white-text">
-               <h4 class="card-title m1">${fit.name} 
-            </h4>
-             </div>
-           </div>
-         </div>
-       </div>
-         `
-          )
-          .join('');
-    
-        document.getElementById('countryList').innerHTML = html;
-      }
-    };
-  
-  document
-    .getElementById('search')
-    .addEventListener('input', () => searchcountry(search.value));
+  const res = await fetch('/countries.json');
+  const countries = await res.json();
+
+  //Get Entered Data
+  let fits = countries.filter(country => {
+    const regex = new RegExp(`^${searchBox}`, 'gi');
+    return country.name.match(regex) || country.abbr.match(regex);
+  });
+
+  if (searchBox.length === 0) {
+    fits = [];
+    countryList.innerHTML = '';
+  }
+
+  outputHtml(fits);
+};
+
+// show results in HTML
+const outputHtml = fits => {
+  if (fits.length > 0) {
+    const html = fits
+      .map(
+        fit => `<option value =${fit.name}></option> `
+      );
+
+    document.getElementById('countryList').innerHTML = html;
+  }
+};
+
+document
+.getElementById('search')
+.addEventListener('input', () => searchcountry(search.value));
 
 
 var place = weatherForm.addEventListener('submit', (e) => {

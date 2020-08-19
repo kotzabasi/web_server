@@ -159,3 +159,7 @@ button{
 .msg{
     flex-grow: 1;
 }
+
+#countryList{
+    display: inline-block;
+}
