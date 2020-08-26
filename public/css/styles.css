@@ -154,7 +154,7 @@ button{
     flex-direction: column;
 }
 #helpmsg{
-    color: #E5E4E2;
+    color: white;
 }
 .msg{
     flex-grow: 1;
